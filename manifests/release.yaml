@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: nginx
-      version: "*"
+      version: "18.1.2"
       sourceRef:
         kind: HelmRepository
         name: bitnami

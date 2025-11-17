@@ -8,13 +8,15 @@ spec:
   chart:
     spec:
       chart: nginx
-      version: "16.x.x"
+      version: "*"
       sourceRef:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
   values:
     replicaCount: 1
+    image:
+      tag: "latest"
     extraEnvVars:
       - name: APP_USERNAME
         valueFrom:
